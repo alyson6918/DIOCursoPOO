@@ -1,0 +1,15 @@
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\DIOExemploPOO.exe
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\DIOExemploPOO.deps.json
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\DIOExemploPOO.runtimeconfig.json
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\DIOExemploPOO.dll
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\ref\DIOExemploPOO.dll
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\bin\Debug\net6.0\DIOExemploPOO.pdb
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.csproj.AssemblyReference.cache
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.AssemblyInfoInputs.cache
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.AssemblyInfo.cs
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.csproj.CoreCompileInputs.cache
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.dll
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\ref\DIOExemploPOO.dll
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.pdb
+C:\Users\alyso\Documents\Workspace\DIO\RepositoriosGit\DIOCursoPOO\DIOExemploPOO\obj\Debug\net6.0\DIOExemploPOO.genruntimeconfig.cache
