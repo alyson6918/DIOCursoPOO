@@ -95,12 +95,29 @@ namespace DIOExemploPOO.helper
             }
             else{System.Console.WriteLine("O arquivo em especifico não foi encontrado ou não existe");}
         }
-        public void MoveArchive(string _path, string destiny){
+        public void MoveArchive(string _path, string destiny, bool overrideArchive){
             if(!File.Exists(_path)){System.Console.WriteLine("O arquivo em questão não foi encontrado ou não existe");}
+            else if(File.Exists(_path) && File.Exists(destiny) && overrideArchive == false){System.Console.WriteLine("Já existe um arquivo com o mesmo nome no caminho de destino e você optou por não sobrescrever-lo");}
+            else if(File.Exists(_path) && File.Exists(destiny) && overrideArchive == true){
+                File.Move(_path, destiny, overrideArchive);
+                System.Console.WriteLine("O arquivo sobrescrito com sucesso");
+            }
             else{
-                File.Move(_path, destiny);
+                File.Move(_path, destiny, overrideArchive);
                 System.Console.WriteLine("O arquivo movido com sucesso");
             }
+        }
+        public void CopyArchive(string _path, string destiny, bool overrideArchive){
+            if(File.Exists(_path) && !File.Exists(destiny)){
+                File.Copy(_path, destiny, overrideArchive);
+                System.Console.WriteLine("O arquivo foi copiado com sucesso");
+            }
+            else if(File.Exists(_path) && File.Exists(destiny) && overrideArchive == false){System.Console.WriteLine("O arquivo já existe na pasta de destino e você optou por não o sobrescrever-lo");}
+            else if(File.Exists(_path) && File.Exists(destiny) && overrideArchive == true){
+                File.Copy(_path, destiny, overrideArchive);
+                System.Console.WriteLine("O arquivo foi copiado e sobrescrito com sucesso");
+            }
+            else{System.Console.WriteLine("O arquivo em questão não foi encontrado ou não existe");}
         }
     }
 }
