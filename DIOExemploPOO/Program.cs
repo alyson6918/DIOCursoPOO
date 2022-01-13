@@ -2,10 +2,14 @@
 
 Calculator calc = new Calculator();
 
-System.Console.WriteLine($"_______________\n\nResultado da primeira soma {calc.sum(10, 10)}");
-System.Console.WriteLine($"_______________\n\nResultado da segunda soma {calc.sum(10, 10, 5)}");
+CheckingAccount c = new CheckingAccount();
 
+c.creditar(100);
 
+c.balance();
+
+//System.Console.WriteLine($"_______________\nResultado da primeira soma {calc.sum(10, 10)}");
+//System.Console.WriteLine($"_______________\nResultado da segunda soma {calc.sum(10, 10, 5)}");
 
 //Student s1 = new Student();
 //s1.Name = "bob";
