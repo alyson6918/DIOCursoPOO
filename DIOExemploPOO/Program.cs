@@ -1,7 +1,19 @@
-﻿using DIOExemploPOO.models;
+﻿using DIOExemploPOO.helper;
+using DIOExemploPOO.models;
 
-Calculator calc = new Calculator();
-System.Console.WriteLine(calc.sum(10, 20));
+var _path = "C:\\archive";
+FileHelper helper = new FileHelper();
+
+helper.lsAllDirectory(_path);
+System.Console.WriteLine("-----------------------");
+helper.lsTopDirectory(_path);
+System.Console.WriteLine("-----------------------");
+helper.lsTopArchiveDirectory(_path);
+System.Console.WriteLine("-----------------------");
+helper.lsAllArchiveDirectory(_path);
+
+// Calculator calc = new Calculator();
+// System.Console.WriteLine(calc.sum(10, 20));
 
 // Computer com = new Computer();
 // System.Console.WriteLine(com.ToString());
