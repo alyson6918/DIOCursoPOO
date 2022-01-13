@@ -77,5 +77,23 @@ namespace DIOExemploPOO.helper
                 }
             }
         }
+        public void ReadTextArchive(string _path){
+            if(File.Exists(_path)){
+                var content = File.ReadAllLines(_path);
+                foreach(var line in content){System.Console.WriteLine(line);}
+            }
+            else{System.Console.WriteLine("O arquivo em especifico não foi encontrado ou não existe");}
+        }
+        public void ReadStreamArchive(string _path){
+            if(File.Exists(_path)){
+                string? line = string.Empty;
+                using (var stream = File.OpenText(_path)){
+                    while((line = stream.ReadLine()) != null){
+                        System.Console.WriteLine(line);
+                    }
+                }
+            }
+            else{System.Console.WriteLine("O arquivo em especifico não foi encontrado ou não existe");}
+        }
     }
 }
