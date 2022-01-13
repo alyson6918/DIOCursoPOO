@@ -1,12 +1,17 @@
 ﻿using DIOExemploPOO.models;
 
-Calculator calc = new Calculator();
+Computer com = new Computer();
+System.Console.WriteLine(com.ToString());
+System.Console.WriteLine(com.GetType());
+System.Console.WriteLine(com.GetHashCode());
 
-CheckingAccount c = new CheckingAccount();
+// Calculator calc = new Calculator();
 
-c.creditar(100);
+// CheckingAccount c = new CheckingAccount();
 
-c.balance();
+// c.creditar(100);
+
+// c.balance();
 
 //System.Console.WriteLine($"_______________\nResultado da primeira soma {calc.sum(10, 10)}");
 //System.Console.WriteLine($"_______________\nResultado da segunda soma {calc.sum(10, 10, 5)}");

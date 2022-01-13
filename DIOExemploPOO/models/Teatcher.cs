@@ -1,6 +1,6 @@
 namespace DIOExemploPOO.models
 {
-    public class Teatcher : Pessoa
+    public sealed class Teatcher : Pessoa
     {
         public double Wage { get; set; }
 
