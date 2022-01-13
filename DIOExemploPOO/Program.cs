@@ -4,12 +4,12 @@ using System.IO;
 
 var _path = "C:\\archive";
 var pathCombined = Path.Combine(_path, "pastaTeste1");
-var pathArchive = Path.Combine(_path, "filmes.txt");
-var filmes = new List<string>{"Vingadores Guerra Infinita", "Vingadores Ultimato", "Homem-Aranha sem volta pra casa"};
-
+var pathArchive = Path.Combine(_path, "cinema.txt");
+var cinemas = new List<string>{"Cinemark", "UC-Cinemas"};
 FileHelper helper = new FileHelper();
 
-helper.CreateStreamTextArchive(pathArchive, filmes, false);
+helper.AddStreamText(pathArchive, cinemas, false);
+
 
 // helper.CreateTextArchive(pathArchive, "Loki\nThanos\nElektro\n", false);
 

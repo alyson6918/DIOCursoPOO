@@ -49,5 +49,33 @@ namespace DIOExemploPOO.helper
                 }    
             }
         }
+        public void AddText(string _path, string content, bool create){
+            if (!File.Exists(_path) && create == false){
+                System.Console.WriteLine("O arquivo em questão não existe e você optou por não criar um novo");
+            }else if (File.Exists(_path)){
+                File.AppendAllText(_path, content);
+                System.Console.WriteLine("arquivo escrito com sucesso!!");
+            }else{
+                File.AppendAllText(_path, content);
+                System.Console.WriteLine("o arquivo foi criado e escrito com sucesso!!");
+            }
+        }
+        public void AddStreamText(string _path, List<string> content, bool create){
+            if(!File.Exists(_path) && create == false){System.Console.WriteLine("O arquivo em questão não existe e você optou por não criar um novo");}
+            else if(File.Exists(_path)){
+                using (var stream = File.AppendText(_path)){
+                    System.Console.WriteLine("Arquivo encontrado com sucesso!!");
+                    foreach(var line in content){stream.WriteLine(line);}
+                    System.Console.WriteLine("Texto adicionado com sucesso!!");
+                }    
+            }
+            else{
+                using (var stream = File.AppendText(_path)){
+                    System.Console.WriteLine("Arquivo criado com sucesso!!");
+                    foreach(var line in content){stream.WriteLine(line);}
+                    System.Console.WriteLine("Texto adicionado com sucesso!!");
+                }
+            }
+        }
     }
 }
