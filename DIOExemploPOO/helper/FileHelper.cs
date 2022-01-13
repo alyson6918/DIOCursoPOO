@@ -95,5 +95,12 @@ namespace DIOExemploPOO.helper
             }
             else{System.Console.WriteLine("O arquivo em especifico não foi encontrado ou não existe");}
         }
+        public void MoveArchive(string _path, string destiny){
+            if(!File.Exists(_path)){System.Console.WriteLine("O arquivo em questão não foi encontrado ou não existe");}
+            else{
+                File.Move(_path, destiny);
+                System.Console.WriteLine("O arquivo movido com sucesso");
+            }
+        }
     }
 }

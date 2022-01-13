@@ -3,19 +3,21 @@ using DIOExemploPOO.models;
 using System.IO;
 
 var _path = "C:\\archive";
-var pathCombined = Path.Combine(_path, "pastaTeste1");
+var pathCombined = Path.Combine(_path, "pastaTeste2", "Filmes.txt");
 var pathArchive = Path.Combine(_path, "cinema.txt");
 var filmeArchive = Path.Combine(_path, "Filmes.txt");
 var cinemas = new List<string>{"Cinemark", "UC-Cinemas"};
 FileHelper helper = new FileHelper();
 
-helper.ReadTextArchive(pathArchive);
-System.Console.WriteLine("--------------------");
-helper.ReadStreamArchive(filmeArchive);
-System.Console.WriteLine("--------------------");
-helper.ReadStreamArchive("sim");
-System.Console.WriteLine("--------------------");
-helper.ReadTextArchive("sim");
+helper.MoveArchive(filmeArchive, pathCombined);
+
+// helper.ReadTextArchive(pathArchive);
+// System.Console.WriteLine("--------------------");
+// helper.ReadStreamArchive(filmeArchive);
+// System.Console.WriteLine("--------------------");
+// helper.ReadStreamArchive("sim");
+// System.Console.WriteLine("--------------------");
+// helper.ReadTextArchive("sim");
 
 // helper.AddStreamText(pathArchive, cinemas, false);
 
