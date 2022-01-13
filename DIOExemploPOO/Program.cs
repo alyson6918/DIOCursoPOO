@@ -1,11 +1,13 @@
 ﻿using DIOExemploPOO.models;
 
-Computer com = new Computer();
-System.Console.WriteLine(com.ToString());
-System.Console.WriteLine(com.GetType());
-System.Console.WriteLine(com.GetHashCode());
+Calculator calc = new Calculator();
+System.Console.WriteLine(calc.sum(10, 20));
 
-// Calculator calc = new Calculator();
+// Computer com = new Computer();
+// System.Console.WriteLine(com.ToString());
+// System.Console.WriteLine(com.GetType());
+// System.Console.WriteLine(com.GetHashCode());
+
 
 // CheckingAccount c = new CheckingAccount();
 
