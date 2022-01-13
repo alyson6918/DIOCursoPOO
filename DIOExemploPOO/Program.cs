@@ -9,7 +9,9 @@ var filmeArchive = Path.Combine(_path, "Filmes.txt");
 var cinemas = new List<string>{"Cinemark", "UC-Cinemas"};
 FileHelper helper = new FileHelper();
 
-helper.CopyArchive(filmeArchive, pathCombined, true);
+helper.DeleteArchive(pathCombined);
+
+// helper.CopyArchive(filmeArchive, pathCombined, true);
 
 // helper.ReadTextArchive(pathArchive);
 // System.Console.WriteLine("--------------------");

@@ -119,5 +119,12 @@ namespace DIOExemploPOO.helper
             }
             else{System.Console.WriteLine("O arquivo em questão não foi encontrado ou não existe");}
         }
+        public void DeleteArchive(string _path){
+            if (File.Exists(_path)){
+                File.Delete(_path);
+                System.Console.WriteLine("O arquivo foi deletado com sucesso");
+            }
+            else{System.Console.WriteLine("O arquivo não foi encontrado ou não existe");}
+        }
     }
 }
