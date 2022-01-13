@@ -26,5 +26,9 @@ namespace DIOExemploPOO.helper
                 System.Console.WriteLine(returns);
             }
         }
+        public void CreateDirectory(string _path){
+            var returns = Directory.CreateDirectory(_path);
+            System.Console.WriteLine(returns.FullName);
+        }
     }
 }

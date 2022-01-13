@@ -1,16 +1,20 @@
 ﻿using DIOExemploPOO.helper;
 using DIOExemploPOO.models;
+using System.IO;
 
 var _path = "C:\\archive";
 FileHelper helper = new FileHelper();
+var pathCombined = Path.Combine(_path, "pastaTeste3", "SubPastaTeste3");
+System.Console.WriteLine($"Criando diretorio: {pathCombined}");
+helper.CreateDirectory(pathCombined);
 
-helper.lsAllDirectory(_path);
-System.Console.WriteLine("-----------------------");
-helper.lsTopDirectory(_path);
-System.Console.WriteLine("-----------------------");
-helper.lsTopArchiveDirectory(_path);
-System.Console.WriteLine("-----------------------");
-helper.lsAllArchiveDirectory(_path);
+// helper.lsAllDirectory(_path);
+// System.Console.WriteLine("-----------------------");
+// helper.lsTopDirectory(_path);
+// System.Console.WriteLine("-----------------------");
+// helper.lsTopArchiveDirectory(_path);
+// System.Console.WriteLine("-----------------------");
+// helper.lsAllArchiveDirectory(_path);
 
 // Calculator calc = new Calculator();
 // System.Console.WriteLine(calc.sum(10, 20));
