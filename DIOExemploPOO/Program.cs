@@ -4,8 +4,11 @@ using System.IO;
 
 var _path = "C:\\archive";
 var pathCombined = Path.Combine(_path, "pastaTeste1");
+var pathArchive = Path.Combine(_path, "viloes.txt");
 FileHelper helper = new FileHelper();
-helper.DeleteDirectory(pathCombined, true);
+helper.CreateTextArchive(pathArchive, "Loki\nThanos\nElektro\n", false);
+
+//helper.DeleteDirectory(pathCombined, true);
 
 // System.Console.WriteLine($"Criando diretorio: {pathCombined}");
 // helper.CreateDirectory(pathCombined);
