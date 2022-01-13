@@ -39,5 +39,15 @@ namespace DIOExemploPOO.helper
                 System.Console.WriteLine("Arquivo criado com sucesso!!");
             }
         }
+        public void CreateStreamTextArchive(string _path, List<string> content, bool overrideArchive){
+            if(File.Exists(_path) && overrideArchive == false){System.Console.WriteLine("O arquivo ja existe e você escolheu não sobrescrever-lo");}
+            else{
+                using (var stream = File.CreateText(_path)){
+                    System.Console.WriteLine("Arquivo criado com sucesso!!");
+                    foreach(var line in content){stream.WriteLine(line);}
+                    System.Console.WriteLine("Arquivo escrito com sucesso!!");
+                }    
+            }
+        }
     }
 }
