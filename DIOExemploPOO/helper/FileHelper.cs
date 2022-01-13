@@ -30,5 +30,6 @@ namespace DIOExemploPOO.helper
             var returns = Directory.CreateDirectory(_path);
             System.Console.WriteLine(returns.FullName);
         }
+        public void DeleteDirectory(string _path, bool archivesIncluded){Directory.Delete(_path, archivesIncluded);}
     }
 }

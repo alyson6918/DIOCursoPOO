@@ -3,10 +3,12 @@ using DIOExemploPOO.models;
 using System.IO;
 
 var _path = "C:\\archive";
+var pathCombined = Path.Combine(_path, "pastaTeste1");
 FileHelper helper = new FileHelper();
-var pathCombined = Path.Combine(_path, "pastaTeste3", "SubPastaTeste3");
-System.Console.WriteLine($"Criando diretorio: {pathCombined}");
-helper.CreateDirectory(pathCombined);
+helper.DeleteDirectory(pathCombined, true);
+
+// System.Console.WriteLine($"Criando diretorio: {pathCombined}");
+// helper.CreateDirectory(pathCombined);
 
 // helper.lsAllDirectory(_path);
 // System.Console.WriteLine("-----------------------");
