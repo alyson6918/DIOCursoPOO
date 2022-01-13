@@ -1,11 +1,25 @@
 ﻿using DIOExemploPOO.models;
 
-Student s1 = new Student();
-s1.Name = "bob";
-s1.Age = 20;
-s1.Note = 5;
-s1.Cpf = 0391700481;
-s1.introduce();
+Calculator calc = new Calculator();
+
+System.Console.WriteLine($"_______________\n\nResultado da primeira soma {calc.sum(10, 10)}");
+System.Console.WriteLine($"_______________\n\nResultado da segunda soma {calc.sum(10, 10, 5)}");
+
+
+
+//Student s1 = new Student();
+//s1.Name = "bob";
+//s1.Age = 20;
+//s1.Note = 8;
+//s1.Cpf = 0391700481;
+//s1.introduce();
+
+//Teatcher s2 = new Teatcher();
+//s2.Name = "Paulo";
+//s2.Age = 47;
+//s2.Cpf = 0156177716;
+//s2.Wage = 2666.0;
+//s2.introduce();
 
 // //valores validos:
 // Retangulo r = new Retangulo();
